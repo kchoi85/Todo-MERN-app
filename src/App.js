@@ -3,14 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Register from "./components/pages/Register"
-import Welcome from "./components/pages/Welcome"
-import Login from "./components/pages/Login"
+import Register from "./pages/Register"
+import Welcome from "./pages/Welcome"
+import Login from "./pages/Login"
 
 export const CredentialsContext = React.createContext(null);
 
 function App() {
-  const CredentialsState = useState(null);
+  const CredentialsState = useState({
+    username: 'admin', //TODO; temp, remove this
+    password: 'admin'
+  });
 
   return (
     <div className="App">

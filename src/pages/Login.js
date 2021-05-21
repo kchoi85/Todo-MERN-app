@@ -1,4 +1,4 @@
-import { CredentialsContext } from '../../App';
+import { CredentialsContext } from '../App';
 import React, {useContext, useState} from 'react';
 import {useHistory} from 'react-router-dom';
 
